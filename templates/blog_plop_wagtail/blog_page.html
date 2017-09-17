@@ -1,4 +1,4 @@
-{% extends "blog-plop-wagtail/base.html" %}
+{% extends "blog_plop_wagtail/base.html" %}
 
 {% load wagtailcore_tags %}
 {% load static %}
@@ -14,7 +14,7 @@
         </div>
         <div class="meta">
             <time class="published" datetime={{page.date}}">{{page.date }}</time>
-            <a href="#" class="author"><span class="name">Jane Doe</span><img src="{% static "blog-plop-wagtail/images/avatar.jpg"%}" alt="" /></a>
+            <a href="#" class="author"><span class="name">Jane Doe</span><img src="{% static "blog_plop_wagtail/images/avatar.jpg"%}" alt="" /></a>
         </div>
     </header>
     {{ page.body|richtext }}
